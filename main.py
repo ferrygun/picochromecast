@@ -10,7 +10,7 @@ while not wlan.isconnected() and wlan.status() >= 0:
     
     
 from urlencode import urlencode
-from pichromecast import play_url
+from picochromecast import play_url
 
 url = 'https://translate.google.com/translate_tts?client=tw-ob&' + urlencode({'q': 'Hello, 世界', 'tl': 'ja'})
 play_url(url, '192.168.50.23')
